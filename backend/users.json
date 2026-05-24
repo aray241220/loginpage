@@ -1,0 +1,26 @@
+{
+    "1": {
+        "username": "rayadrija",
+        "email": "rayadrija2003@gmail.com",
+        "password": "pbkdf2:sha256:600000$aUzL2NFVHqua9BeL$1c79b910f1f6a33bb20c439154b3e6badb6be4eb03cb501f26e41b231333d8cc",
+        "date_joined": "2026-05-24T00:26:37.197319"
+    },
+    "2": {
+        "username": "rupsaroy",
+        "email": "test@xyz",
+        "password": "pbkdf2:sha256:600000$H4b6tPV9AyoGLvYX$205733560e88a2e895935c66b26be6f4c48a41bf74da8a872928585517ea03a6",
+        "date_joined": "2026-05-24T01:52:59.188873"
+    },
+    "3": {
+        "username": "gaydada",
+        "email": "gay@dada",
+        "password": "pbkdf2:sha256:600000$WUAb7GBv296Kdmo9$40f8f5b8f1e071ea5550db2cdfb41093051348bfc6e61959088991819871f4f6",
+        "date_joined": "2026-05-24T02:46:54.391501"
+    },
+    "4": {
+        "username": "gay.subsa",
+        "email": "gay@subsa.com",
+        "password": "pbkdf2:sha256:600000$mgvddMEwhvI3SwKA$7aafe0254e262547ace34e8d30b931615bffdb7d4779ce826fa5d785d9e86821",
+        "date_joined": "2026-05-24T03:17:08.018412"
+    }
+}
