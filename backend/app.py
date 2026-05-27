@@ -17,17 +17,35 @@ jwt = JWTManager(app)
 # Data file for storing users
 USERS_FILE = 'users.json'
 
+## IN MEMORY DB
+users_db = {
+    "1": {
+        "username": "rayadrija",
+        "email": "rayadrija2003@gmail.com",
+        "password": "pbkdf2:sha256:600000$aUzL2NFVHqua9BeL$1c79b910f1f6a33bb20c439154b3e6badb6be4eb03cb501f26e41b231333d8cc",
+        "date_joined": "2026-05-24T00:26:37.197319"
+    },
+    "2": {
+        "username": "rupsaroy",
+        "email": "test@xyz",
+        "password": "pbkdf2:sha256:600000$H4b6tPV9AyoGLvYX$205733560e88a2e895935c66b26be6f4c48a41bf74da8a872928585517ea03a6",
+        "date_joined": "2026-05-24T01:52:59.188873"
+    }
+}
+
+
 def load_users():
     """Load users from JSON file"""
-    if os.path.exists(USERS_FILE):
-        with open(USERS_FILE, 'r') as f:
-            return json.load(f)
-    return {}
+    # if os.path.exists(USERS_FILE):
+    #     with open(USERS_FILE, 'r') as f:
+    #         return json.load(f)
+    # return {}
+    return users_db
 
 def save_users(users):
-    """Save users to JSON file"""
-    with open(USERS_FILE, 'w') as f:
-        json.dump(users, f, indent=4)
+    """Save users in memory"""
+    global users_db
+    users_db = users
 
 @app.route('/register', methods=['POST'])
 def register():
