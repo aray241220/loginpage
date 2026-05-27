@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://loginpage-three-liard.vercel.app/';
 
 // Check if user is logged in on page load
 window.addEventListener('load', () => {
