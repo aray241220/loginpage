@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://loginpage-three-liard.vercel.app/';
 
 function toggleForms() {
     const loginForm = document.getElementById('loginForm');
